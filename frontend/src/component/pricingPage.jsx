@@ -139,7 +139,7 @@ const PricingPage = () => {
             </motion.div>
           </div>
         </div>
-        <div className="md:flex justify-between md:px-48 px-12 py-16">
+        <div className="lg:flex justify-between md:px-48 px-12 py-16">
           <div className="py-24">
             <div className="h-24 flex items-center">
               <TypeAnimation

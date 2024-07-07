@@ -4,6 +4,7 @@ import { UserPlusIcon } from "@heroicons/react/24/solid";
 import { motion, useScroll, useTransform } from "framer-motion";
 import illustration from "../assets/illustration.jpg";
 import Pricing from "./pricingPage";
+import CustomerReview from "./CustomerReview";
 
 const Intro = () => {
   const ref = useRef(null);
@@ -59,6 +60,7 @@ const Intro = () => {
       <motion.div className="relative">
         <Pricing />
       </motion.div>
+      <CustomerReview />
     </div>
   );
 };

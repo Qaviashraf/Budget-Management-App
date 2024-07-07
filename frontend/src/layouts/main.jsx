@@ -7,6 +7,7 @@ import wave from "../assets/wave.svg";
 
 // components
 import Nav from "../component/Nav";
+import { Footer } from "../component/Footer";
 
 //  helper functions
 import { fetchData } from "../helpers"
@@ -36,6 +37,7 @@ const Main = () => {
         <Outlet />
       </main>
       <img src={wave} alt="" />
+      <Footer />
     </div>
   )
 }

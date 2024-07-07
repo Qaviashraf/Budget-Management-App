@@ -17,6 +17,8 @@ import { deleteBudget } from "./action/deleteBudget";
 import Dashboard, { dashboardAction, dashboardLoader } from "./pages/Dashboard";
 import Error from "./pages/Error";
 import SignIn from "./pages/SignIn";
+import { Signup } from "./pages/SignUp";
+import { ForgetPassword } from "./pages/ForgetPassword";
 import BudgetPage, { budgetAction, budgetLoader } from "./pages/BudgetPage";
 import ExpensesPage, { expensesAction, expensesLoader } from "./pages/ExpensesPage";
 
@@ -64,8 +66,16 @@ function App() {
         {
           path: "signin",
           element: <SignIn />,
-          loader: expensesLoader,
-          action: expensesAction,
+          errorElement: <Error />,
+        },
+        {
+          path: "signup",
+          element: <Signup />,
+          errorElement: <Error />,
+        },
+        {
+          path: "forgetpassword",
+          element: <ForgetPassword />,
           errorElement: <Error />,
         },
         {
